@@ -30,10 +30,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         php7.3-xsl \
         yarn \
         nodejs \
+        git \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
-ENV HOME=.
+ENV HOME=/home
 
 # composer
 COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
