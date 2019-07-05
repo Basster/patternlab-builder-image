@@ -10,6 +10,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-transport-https \
     ca-certificates \
     bzip2 \
+    libatk1.0-0 \
+    libatk-bridge2.0-0 \
     && curl -sL https://deb.nodesource.com/setup_10.x | bash - \
     && wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg \
     && sh -c 'echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list' \
@@ -31,6 +33,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         yarn \
         nodejs \
         git \
+        chromium \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
