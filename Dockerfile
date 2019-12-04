@@ -17,17 +17,17 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list \
     && apt-get update \
     && apt-get install -y --no-install-recommends --autoremove \
-        php7.3-apcu \
-        php7.3-common \
-        php7.3-readline \
-        php7.3-cli \
-        php7.3-curl \
-        php7.3-intl \
-        php7.3-mbstring \
-        php7.3-opcache \
-        php7.3-json \
-        php7.3-zip \
-        php7.3-xsl \
+        php7.4-apcu \
+        php7.4-common \
+        php7.4-readline \
+        php7.4-cli \
+        php7.4-curl \
+        php7.4-intl \
+        php7.4-mbstring \
+        php7.4-opcache \
+        php7.4-json \
+        php7.4-zip \
+        php7.4-xsl \
         yarn \
         nodejs \
         git \
